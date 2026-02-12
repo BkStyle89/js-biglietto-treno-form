@@ -12,12 +12,12 @@ const finalPriceEl=document.getElementById("finalPrice")
 console.log(nameEl,distanceEl,ageEl,formEl)
 
 
+
 /* save info function */
 formEl.addEventListener("submit",function(e){
     e.preventDefault()
   /*   console.log(distanceEl.value) */
     let price = distanceEl.value * 0.21;
-    
     if (ageEl.value === "under18"){
         price = price * 0.8;
     }
@@ -26,9 +26,9 @@ formEl.addEventListener("submit",function(e){
     }
     console.log("costo finale biglietto è:" + " " + price.toFixed(2));
     console.log(nameEl.value,distanceEl.value,ageEl.value )
-    return price;
-})
-finalPriceEl.innerHTML = price.toFixed(2)
+}
+)
+
   
   /* prezzo in base all'età biglietto */
   /* età passeggero tra maggiorenne over 65*/
