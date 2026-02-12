@@ -31,3 +31,10 @@ formEl.addEventListener("submit",function(e){
   
   //const distanceEl= document.getElementById("distance")
   //const ageEl= document.getElementById("age")
+
+  /* numero randomico carrozza */
+  const trainCoach = Math.floor(Math.random() *10) + 1;
+  console.log(trainCoach)
+  /* numero randomico codice CP */
+  const codeCp = Math.floor(Math.random()* (1000, 9000)) + (1000 + 1);
+  console.log(codeCp)
