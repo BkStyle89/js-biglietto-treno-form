@@ -9,6 +9,7 @@ const cancelEl=document.getElementById("cancel")
 const coachEl=document.getElementById("coach")
 const cpCodeEl=document.getElementById("cpCode")
 const finalPriceEl=document.getElementById("finalPrice")
+const passengerNameEl=document.getElementById("passengerName")
 console.log(nameEl,distanceEl,ageEl,formEl)
 
 
@@ -24,6 +25,8 @@ formEl.addEventListener("submit",function(e){
     else if (ageEl.value==="over65"){
         price = price * 0.6;
     }
+    finalPriceEl.innerHTML=price.toFixed(2)
+    passengerNameEl.innerHTML =nameEl.value
     console.log("costo finale biglietto è:" + " " + price.toFixed(2));
     console.log(nameEl.value,distanceEl.value,ageEl.value )
 }
@@ -49,4 +52,5 @@ formEl.addEventListener("submit",function(e){
      const codeCp = Math.floor(Math.random()* 9000) + 1000;
      console.log(codeCp)
      cpCodeEl.innerHTML = codeCp 
- 
+    
+     
