@@ -1,3 +1,4 @@
+/* name Elements */
 const nameEl= document.getElementById("name")
 const distanceEl= document.getElementById("distance")
 const ageEl= document.getElementById("age")
@@ -6,11 +7,12 @@ const createEl=document.getElementById("create")
 const cancelEl=document.getElementById("cancel")
 console.log(nameEl,distanceEl,ageEl,formEl)
 
-
+/* click button function */
 createEl.addEventListener("click",function(){
     console.log(nameEl.value,distanceEl.value,ageEl.value);
 
 })
+/* save info function */
 formEl.addEventListener("submit",function(e){
     e.preventDefault()
     console.log(nameEl.value,distanceEl.value,ageEl.value )
