@@ -3,8 +3,12 @@ const nameEl= document.getElementById("name")
 const distanceEl= document.getElementById("distance")
 const ageEl= document.getElementById("age")
 const formEl = document.querySelector(".first")
+const secondEl = document.querySelector(".second")
 const createEl=document.getElementById("create")
 const cancelEl=document.getElementById("cancel")
+const coachEl=document.getElementById("coach")
+const cpCodeEl=document.getElementById("cpCode")
+const finalPriceEl=document.getElementById("finalPrice")
 console.log(nameEl,distanceEl,ageEl,formEl)
 
 
@@ -22,7 +26,9 @@ formEl.addEventListener("submit",function(e){
     }
     console.log("costo finale biglietto è:" + " " + price.toFixed(2));
     console.log(nameEl.value,distanceEl.value,ageEl.value )
+    return price;
 })
+finalPriceEl.innerHTML = price.toFixed(2)
   
   /* prezzo in base all'età biglietto */
   /* età passeggero tra maggiorenne over 65*/
@@ -33,8 +39,14 @@ formEl.addEventListener("submit",function(e){
   //const ageEl= document.getElementById("age")
 
   /* numero randomico carrozza */
-  const trainCoach = Math.floor(Math.random() *10) + 1;
-  console.log(trainCoach)
-  /* numero randomico codice CP */
-  const codeCp = Math.floor(Math.random()* (1000, 9000)) + (1000 + 1);
-  console.log(codeCp)
+
+
+     const trainCoach = Math.floor(Math.random() *10) + 1;
+     console.log(trainCoach)
+     coachEl.innerHTML = trainCoach
+   
+     /* numero randomico codice CP */
+     const codeCp = Math.floor(Math.random()* 9000) + 1000;
+     console.log(codeCp)
+     cpCodeEl.innerHTML = codeCp 
+ 
