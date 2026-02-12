@@ -1,0 +1,7 @@
+const nameEl= document.getElementById("name")
+const distanceEl= document.getElementById("distance")
+const ageEl= document.getElementById("age")
+const formEl = document.querySelector(".first")
+const createEl=document.getElementById("create")
+const cancelEl=document.getElementById("cancel")
+console.log(nameEl,distanceEl,ageEl,formEl)
