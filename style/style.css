@@ -2,7 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgb(119, 179, 122);
 }
+
 body{
     background: linear-gradient(to bottom, black, bisque);
     background-repeat: no-repeat;
@@ -16,6 +20,7 @@ body{
     justify-content: center;
     color: white;
     text-shadow: 2px 2px 2px black;
+    
 }
 #firstContainer{
     background-color: white;
@@ -40,6 +45,7 @@ body{
     background-size: cover;
     background-position: center;
     border: solid;
+    
 }
 #create{
     border-radius: 15px;
@@ -58,6 +64,7 @@ body{
 
 .tit{
     display: flex;
+    font-weight: 600;
 }
 
 .name{
