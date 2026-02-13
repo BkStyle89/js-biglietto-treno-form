@@ -27,6 +27,14 @@ formEl.addEventListener("submit",function(e){
     }
     finalPriceEl.innerHTML=price.toFixed(2)
     passengerNameEl.innerHTML =nameEl.value
+    const trainCoach = Math.floor(Math.random() *10) + 1;
+    console.log(trainCoach)
+    coachEl.innerHTML = trainCoach
+    
+    /* numero randomico codice CP */
+    const codeCp = Math.floor(Math.random()* 9000) + 1000;
+    console.log(codeCp)
+    cpCodeEl.innerHTML = codeCp 
     console.log("costo finale biglietto è:" + " " + price.toFixed(2));
     console.log(nameEl.value,distanceEl.value,ageEl.value )
 }
@@ -44,13 +52,5 @@ formEl.addEventListener("submit",function(e){
   /* numero randomico carrozza */
 
 
-     const trainCoach = Math.floor(Math.random() *10) + 1;
-     console.log(trainCoach)
-     coachEl.innerHTML = trainCoach
-   
-     /* numero randomico codice CP */
-     const codeCp = Math.floor(Math.random()* 9000) + 1000;
-     console.log(codeCp)
-     cpCodeEl.innerHTML = codeCp 
     
      

@@ -26,7 +26,7 @@ body{
     background-color: white;
     text-align: center;
     border-radius: 20px;
-    height: 20vh;
+    min-height: 20vh;
     background-image: url(./img/vintage-card-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +39,7 @@ body{
     background-color: white;
     text-align: center;
     border-radius: 20px;
-    height: 20vh;
+    min-height: 20vh;
     background-image: url(./img/vintage-card-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
